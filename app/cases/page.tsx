@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, Play, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -68,7 +68,8 @@ export default function PortfolioPage() {
   }
 
   return (
-    <main className="min-h-screen bg-black">
+    <Suspense>
+      <main className="min-h-screen bg-black">
       {/* Hero Section */}
       <section className="mx-auto pt-32 pb-8">
         <div className="text-center">
@@ -259,5 +260,6 @@ export default function PortfolioPage() {
         </section>
       )}
     </main>
+    </Suspense>
   )
 }
