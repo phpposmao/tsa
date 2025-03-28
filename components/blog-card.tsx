@@ -27,7 +27,6 @@ export default function BlogCard({ post, title, image }: BlogCardProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-lg font-bold text-white mb-2">{postTitle}</h3>
-            <p className="text-sm text-gray-300 line-clamp-2">{postExcerpt}</p>
           </div>
         </div>
       </div>

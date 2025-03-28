@@ -10,64 +10,64 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Alice Loceli",
-    role: "Produtora de conteúdo",
-    image: "/placeholder.svg?height=400&width=400&text=Alice",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Alice-Hover",
+    name: "Gabriel Viana",
+    role: "Gestor de Tráfego",
+    image: "/image/sobre/GA1.png",
+    imageHover: "/image/sobre/GA2.png",
   },
   {
-    name: "Tiago Tassel",
+    name: "Tiago Tasselli",
     role: "Atendimento",
-    image: "/placeholder.svg?height=400&width=400&text=Tiago",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Tiago-Hover",
+    image: "/image/sobre/TIAGO1.png",
+    imageHover: "/image/sobre/TIAGO2.png",
   },
   {
     name: "Erick Renato",
     role: "Gestor de Tráfego",
-    image: "/placeholder.svg?height=400&width=400&text=Erick",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Erick-Hover",
+    image: "/image/sobre/ERICK1.png",
+    imageHover: "/image/sobre/ERICK2.png",
   },
   {
-    name: "Pedro Poemeo",
+    name: "Pedro Posmão",
     role: "Desenvolvedor",
-    image: "/placeholder.svg?height=400&width=400&text=Pedro",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Pedro-Hover",
+    image: "/image/sobre/PEDRO1.png",
+    imageHover: "/image/sobre/PEDRO2.png",
   },
   {
     name: "Gustavo Araújo",
     role: "Atendimento",
-    image: "/placeholder.svg?height=400&width=400&text=Gustavo",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Gustavo-Hover",
+    image: "/image/sobre/GU1.png",
+    imageHover: "/image/sobre/GU2.png",
   },
   {
     name: "Ítalo Miranda",
     role: "Comercial e Negócios",
-    image: "/placeholder.svg?height=400&width=400&text=Italo",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Italo-Hover",
+    image: "/image/sobre/ITALO1.png",
+    imageHover: "/image/sobre/ITALO2.png",
   },
   {
-    name: "Erico Tenaran",
+    name: "Erico Tereran",
     role: "Diretor de Arte",
-    image: "/placeholder.svg?height=400&width=400&text=Erico",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Erico-Hover",
+    image: "/image/sobre/ERICO1.png",
+    imageHover: "/image/sobre/ERICO2.png",
   },
   {
-    name: "Bia Lewandowski",
+    name: "Bia Lavandoscki",
     role: "Coordenadora de Projetos",
-    image: "/placeholder.svg?height=400&width=400&text=Bia",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Bia-Hover",
+    image: "/image/sobre/BIA1.png",
+    imageHover: "/image/sobre/BIA2.png",
   },
   {
     name: "Vanessa Ferreira",
     role: "Designer",
-    image: "/placeholder.svg?height=400&width=400&text=Vanessa",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Vanessa-Hover",
+    image: "/image/sobre/VAN1.png",
+    imageHover: "/image/sobre/VAN2.png",
   },
   {
     name: "Alex Torres",
     role: "CEO & Diretor",
-    image: "/placeholder.svg?height=400&width=400&text=Alex",
-    imageHover: "/placeholder.svg?height=400&width=400&text=Alex-Hover",
+    image: "/image/sobre/ALEX1.png",
+    imageHover: "/image/sobre/ALEX2.png",
   },
 ]
 
@@ -113,10 +113,10 @@ export default function AboutPage() {
       <section className="max-w-[1180px] mx-auto px-4 pb-8 pt-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular mb-6">Sobre nós</h1>
-          <div className="bg-blue-800 text-white text-2xl md:text-3x1 font-regular py-2 px-20 rounded-full inline-block mb-8">
+          <div className="bg-blue-800 text-white text-xl md:text-3x1 font-regular py-2 px-20 rounded-full inline-block mb-8">
             Transformando marcas desde 2017
           </div>
-          <p className="text-gray-300 text-lg leading-relaxed text-center">
+          <p className="text-gray-300 text:sm md:text-lg leading-relaxed text-center">
             A TSA Business & Hub nasceu em 2017 com uma missão clara:{" "}
             <strong className="text-white">
               ajudar empresas a se destacarem no mercado com estratégias integradas de gestão de marca e marketing

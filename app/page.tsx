@@ -10,19 +10,20 @@ import VideoSlider from "@/components/video-slider"
 import { blogPosts } from "@/lib/blog-data"
 import { portfolioProjects, categories } from "@/lib/portfolio-data"
 import PartnersSlider from "@/components/partners-slider"
+import { Metadata } from "next"
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black bg-gradienteImgHome bg-repeat bg-cover text-white">
       {/* Hero Section */}
-      <section className=" mx-auto pt-40 pb-16">
+      <section className=" mx-auto pt-40 pb-16 px-5 md:px-0">
         <div className="">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-regular mb-2 text-left">
               Estratégias que <br/>geram resultados
             </h1>
           </div>
-          <div className="flex items-center justify-end mt-8 ml-[35%] mb-16">
+          <div className="flex items-center justify-end mt-8 md:ml-[35%] mb-16">
             <p className="text-[#fc4c01] whitespace-nowrap text-2xl font-thin mr-4">We are the action</p>
             <div className="h-[5px] w-screen bg-gradient-to-r from-[#fc4c01] to-purple-600"></div>
           </div>
@@ -56,9 +57,9 @@ export default function Home() {
       {/* About Us Section */}
       <section className="max-w-[1180px] mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="flex flex-col justify-center pr-20">
-            <h2 className="text-4xl font-regular mb-10 text-center">Sobre nós</h2>
-            <p className="text-gray-300 mb-10">
+          <div className="flex flex-col text-center justify-center items-center md:items-start md:pr-20">
+            <h2 className="text-4xl font-regular md:text-left mb-10 text-center">Sobre nós</h2>
+            <p className="text-gray-300 mb-10 md:text-left">
               Na TSA Comunicação, temos atuado consistente desde 2007 com um time formado por agentes experientes e
               multidisciplinares. Desenvolvemos estratégias integradas de branding e marketing para marcas e
               personalidades, gerando resultados mensuráveis. Nosso compromisso é transformar ideias em ações concretas
@@ -84,7 +85,7 @@ export default function Home() {
 
       {/* Case Studies Section - Updated to match design and use portfolio data */}
       <section className="py-16">
-        <div className="max-w-[1180px] mx-auto bg-black rounded-2xl p-20">
+        <div className="max-w-[1180px] mx-auto bg-black rounded-2xl p-5 md:p-20">
           <h2 className="text-4xl font-regular mb-2 text-center">
             CASES DE <span className="text-[#fc4c01] font-bold">GRANDE</span> SUCESSO
           </h2>
@@ -109,7 +110,7 @@ export default function Home() {
             </div>
 
             <div className="col-span-12 md:col-span-8">
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 h-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-full">
                 {/* Top row of smaller cases */}
                 {portfolioProjects.slice(1, 4).map((project, index) => (
                   <Link key={project.id} href={`/cases?id=${project.id}`} className="block">
@@ -132,7 +133,7 @@ export default function Home() {
 
             {/* Second row */}
             <div className="col-span-12 md:col-span-8">
-              <div className="grid grid-cols-2 gap-4 h-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
                 {/* Bottom row of medium cases */}
                 {portfolioProjects.slice(4, 8).map((project) => (
                   <Link key={project.id} href={`/cases?id=${project.id}`} className="block">
@@ -155,9 +156,9 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center">
-            <PrimaryButton className="px-6 py-3 text-sm">
-              <Link href="/contato" className="flex">
-                FALE CONOSCO E TRANSFORME SEU NEGÓCIO <ChevronRight className="ml-2 h-4 w-4" />
+            <PrimaryButton className="px-6 py-3 md:text-sm">
+              <Link href="/contato" className="flex text-center">
+                TRANSFORME SEU NEGÓCIO <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
             </PrimaryButton>
           </div>
@@ -311,9 +312,9 @@ export default function Home() {
           <VideoSlider />
 
           <div className="flex justify-center mt-8">
-            <PrimaryButton className="px-6 py-3 text-sm">
+            <PrimaryButton className="px-6 py-3 text-xs md:text-sm">
               <Link href="/contato">
-                VENHA SABER O QUE NOS TORNA ÚNICOS
+                SAIBA O QUE NOS TORNA ÚNICOS
               </Link>
             </PrimaryButton>
           </div>
@@ -321,8 +322,8 @@ export default function Home() {
       </section>
 
       {/* Blog Section - Updated to use blog data */}
-      <section className="max-w-[1180px] mx-auto px-4 py-16">
-        <div className="bg-[#1a1a1a] rounded-xl p-20">
+      <section className="max-w-[1180px] mx-auto px-4 py-5 md:py-16">
+        <div className="bg-[#1a1a1a] rounded-xl p-5 md:p-20">
           <h2 className="text-3xl font-regular mb-8 text-center">
             Descubra insights e tendências <br />
             do marketing como um todo

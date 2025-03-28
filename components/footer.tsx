@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Instagram, Linkedin, Twitter, Youtube, Smartphone } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Youtube, Smartphone } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -22,8 +23,8 @@ export default function Footer() {
               <Link href="/" className="text-sm text-gray-400 hover:text-white transition-colors">
                 Home
               </Link>
-              <Link href="/solucoes" className="text-sm text-gray-400 hover:text-white transition-colors">
-                Soluções
+              <Link href="/servicos" className="text-sm text-gray-400 hover:text-white transition-colors">
+                Serviços
               </Link>
               <Link href="/sobre" className="text-sm text-gray-400 hover:text-white transition-colors">
                 Quem Somos
@@ -45,24 +46,25 @@ export default function Footer() {
 
           <div>
             <h3 className="font-bold mb-4">Contato</h3>
-            <p className="text-sm text-gray-400 mb-2">São Paulo, SP - Brasil</p>
-            <p className="text-sm text-gray-400 mb-2">contato@tsacomunicacao.com.br</p>
-            <p className="text-sm text-gray-400 mb-4">+55 11 9999-9999</p>
+            <p className="text-sm text-gray-400 mb-2">Av. Europa, 233 - Vila Cordenonsi, Americana - SP, 18406-460</p>
+            <p className="text-sm text-gray-400 mb-2">falecom@tsacomunica.com.br</p>
+            <p className="text-sm text-gray-400 mb-2">19 98216-2892</p>
+            <p className="text-sm text-gray-400 mb-4">19 3645-5986</p>
 
             <div className="flex space-x-4">
-              <Link href="https://facebook.com" aria-label="Facebook">
-                <Facebook className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tsacomunica" aria-label="Facebook">
+                <Facebook className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link href="https://instagram.com" aria-label="Instagram">
-                <Instagram className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tsacomunica/" aria-label="Instagram">
+                <Instagram className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link href="https://linkedin.com" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tsa-comunica-b6a49b21b/" aria-label="LinkedIn">
+                <Linkedin className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link href="https://twitter.com" aria-label="Twitter">
-                <Twitter className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+              <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">
+                <FaWhatsapp className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link href="https://youtube.com" aria-label="YouTube">
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCCsNfhTMFUWrIhOQ6QIZajg" aria-label="YouTube">
                 <Youtube className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
               </Link>
             </div>
@@ -72,7 +74,7 @@ export default function Footer() {
         <div className="max-w-[1180px] mx-auto border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-gray-500 mb-4 md:mb-0">
-              © {new Date().getFullYear()} TSA Comunicação. Todos os direitos reservados.
+              © {new Date().getFullYear()} TSA Business Hub. Todos os direitos reservados.
             </p>
 
             <div className="flex flex-col md:flex-row items-center gap-4">

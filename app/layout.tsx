@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import VideoPopup from "@/components/video-popup"
+import "./globals.css"
+import { Metadata } from "next"
 
 const glancyr = localFont({
   src: [
@@ -36,6 +38,17 @@ const glancyr = localFont({
   ]
 })
 
+export const metadata: Metadata = {
+  title: "Home | TSA",
+  description: "Conheça a equipe TSA e nossa história de transformação de marcas desde 2017.",
+  icons: {
+    icon: {
+      url: "/image/favicon.png",
+      href: "/image/favicon.png"
+    }
+  }
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -56,9 +69,3 @@ export default function RootLayout({
 }
 
 
-
-import './globals.css'
-
-export const metadata = {
-      generator: 'v0.dev'
-    };

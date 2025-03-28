@@ -3,11 +3,12 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, Facebook, Instagram, Linkedin } from "lucide-react"
+import { Menu, X, Facebook, Instagram, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useMediaQuery } from "@/hooks/use-media-query"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -50,14 +51,17 @@ export default function Navbar() {
               </nav>
 
               <div className="hidden md:flex items-center space-x-3">
-                <Link href="https://facebook.com" aria-label="Facebook">
-                  <Facebook className="h-4 w-4" />
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tsacomunica" aria-label="Facebook">
+                  <Facebook className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
                 </Link>
-                <Link href="https://instagram.com" aria-label="Instagram">
-                  <Instagram className="h-4 w-4" />
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tsacomunica/" aria-label="Instagram">
+                  <Instagram className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
                 </Link>
-                <Link href="https://linkedin.com" aria-label="LinkedIn">
-                  <Linkedin className="h-4 w-4" />
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tsa-comunica-b6a49b21b/" aria-label="LinkedIn">
+                  <Linkedin className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
+                </Link>
+                <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">
+                  <FaWhatsapp className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
                 </Link>
               </div>
             </>
@@ -88,14 +92,17 @@ export default function Navbar() {
             ))}
 
             <div className="flex items-center space-x-4 pt-4">
-              <Link href="https://facebook.com" aria-label="Facebook">
-                <Facebook className="h-5 w-5" />
+              <Link href="https://www.facebook.com/tsacomunica" aria-label="Facebook">
+                <Facebook className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link href="https://instagram.com" aria-label="Instagram">
-                <Instagram className="h-5 w-5" />
+              <Link href="https://www.instagram.com/tsacomunica/" aria-label="Instagram">
+                <Instagram className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link href="https://linkedin.com" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
+              <Link href="https://www.linkedin.com/in/tsa-comunica-b6a49b21b/" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+              </Link>
+              <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">
+                <FaWhatsapp className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
             </div>
           </nav>

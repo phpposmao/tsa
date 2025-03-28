@@ -31,19 +31,8 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* Categories */}
-        <section className="mx-auto px-4 mb-8">
-          <div className="flex flex-wrap justify-center gap-2">
-            {categories.map((category) => (
-              <Button key={category} variant="outline" className="rounded-full text-sm">
-                {category}
-              </Button>
-            ))}
-          </div>
-        </section>
-
         {/* Blog Posts Grid */}
-        <section className="mx-auto px-20 py-16">
+        <section className="mx-auto px-5 md:px-20 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.map((post) => (
               <BlogCard key={post.id} post={post} />

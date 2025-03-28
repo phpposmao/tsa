@@ -70,18 +70,18 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-black bg-gradientImg bg-repeat bg-right-top">
       {/* Hero Section */}
       <section className="max-w-[1180px] mx-auto px-4 pt-32 pb-16">
-        <div className="max-w-3xl ml-24">
+        <div className="max-w-3xl md:ml-24">
           <h1 className="text-5xl md:text-6xl lg:text-7xl text-white mb-4 leading-tight">
             <span className="font-regular">
               Nossos
-                            <br />
+              <br />
             </span>
             <span className="font-semibold">
               serviços
               <br />
               integrados
             </span>
-            <div className="h-1 w-screen bg-gradient-to-r from-orange-500 via-red-500 to-purple-600"></div>
+            <div className="h-1 w-full bg-gradient-to-r from-[#fc4c01] via-red-500 to-purple-600"></div>
           </h1>
         </div>
       </section>
@@ -97,13 +97,13 @@ export default function ServicesPage() {
               } items-center bg-gray-900 bg-opacity-25 rounded-2xl`}
             >
               <div className="w-full md:w-1/2">
-                <div className="relative aspect-square overflow-hidden rounded-2xl bg-orange-500">
+                <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#fc4c01]">
                   <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
                 </div>
               </div>
 
               <div className="w-full md:w-1/2 md:px-20">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-orange-500">{service.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#fc4c01]">{service.title}</h2>
                 <p className="text-white text-lg leading-relaxed">{service.description}</p>
               </div>
             </div>

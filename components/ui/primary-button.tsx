@@ -11,7 +11,7 @@ export function PrimaryButton({ children, className, ...props }: PrimaryButtonPr
   return (
     <Button
       className={cn(
-        "bg-[#fc4c01] hover:bg-orange-700 text-white rounded-full px-8 py-6 text-sm tracking-widest font-semibold",
+        "bg-[#fc4c01] hover:bg-orange-700 text-white rounded-full px-8 py-6 text-xs md:text-sm tracking-widest font-semibold",
         className,
       )}
       {...props}

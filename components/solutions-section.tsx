@@ -3,6 +3,15 @@
 import { useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import localFont from "next/font/local"
+
+const estrella = localFont({
+  src: [
+    {
+      path: "../public/fonts/estrella-early.otf",
+    },
+  ]
+})
 
 type Solution = {
   id: string
@@ -19,7 +28,7 @@ interface SolutionsSectionProps {
 export default function SolutionsSection({ title = "Soluções Integradas" }: SolutionsSectionProps) {
   const solutions: Solution[] = [
     {
-      id: "strategy",
+      id: "force",
       title: "ACELERAÇÃO E PERFORMANCE",
       description: "Análise de mercado e desenvolvimento de estratégias",
       image: "/image/home/solucoes/fundo-marketing1.png",
@@ -27,7 +36,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
         "",
     },
     {
-      id: "career",
+      id: "labs",
       title: "CONSULTORIA E TREINAMENTO",
       description: "Desenvolvimento profissional e posicionamento",
       image: "/image/home/solucoes/fundo-marketing2.png",
@@ -35,7 +44,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
         "",
     },
     {
-      id: "digital",
+      id: "events",
       title: "PLANEJAMENTO E GESTÃO DE EVENTOS",
       description: "Estratégias online e gestão de presença digital",
       image: "/image/home/solucoes/fundo-marketing3.png",
@@ -43,7 +52,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
         "",
     },
     {
-      id: "press",
+      id: "marketing",
       title: "AGÊNCIA DE COMUNICAÇÃO",
       description: "Relacionamento com mídia e gestão de imagem",
       image: "/image/home/solucoes/fundo-marketing4.png",
@@ -51,7 +60,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
         "",
     },
     {
-      id: "content",
+      id: "brand",
       title: "GESTÃO DE MARCAS E PATENTES",
       description: "Criação de conteúdo relevante e engajador",
       image: "/image/home/solucoes/fundo-marketing5.png",
@@ -59,7 +68,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
         "",
     },
     {
-      id: "market",
+      id: "edge",
       title: "INTELIGÊNCIA DE MERCADO",
       description: "Análise de tendências e comportamento",
       image: "/image/home/solucoes/fundo-marketing6.png",
@@ -72,7 +81,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
   const currentSolution = solutions.find((s) => s.id === selectedSolution) || solutions[0]
 
   return (
-    <div className="bg-[#1e1e1e] rounded-xl p-20 relative">
+    <div className="bg-[#1e1e1e] rounded-xl p-5 md:p-20 relative">
       <h2 className="text-4xl font-regular mb-8 text-center">{title}</h2>
 
       <div className="max-w-4xl mx-auto">
@@ -84,7 +93,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
               <div
                 key={solution.id}
                 className={cn(
-                  "flex-1 p-8 cursor-pointer transition-colors relative z-10",
+                  "flex-1 p-8 text-center items-center cursor-pointer transition-colors relative z-10",
                   index !== 2 && "mb-2", // Add margin between buttons except the last one
                   selectedSolution === solution.id
                     ? "bg-[#FC4C01] text-white"
@@ -98,20 +107,21 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
           </div>
 
           {/* Center TSA logo and image */}
-          <div className="w-full md:w-1/2 bg-[#1e1e1e] relative flex items-center justify-center mx-0">
+          <div className="w-full md:w-1/2 bg-[#1e1e1e] relative flex items-center justify-center -mx-0.5 -my-0.5 p-0">
 
             {/* Current solution image as background */}
-            <div className="absolute inset-0 w-full h-full">
+            <div className="absolute inset-0 w-0 h-0 md:w-auto md:h-auto">
               <Image
                 src={currentSolution.image || "/placeholder.svg"}
                 alt={currentSolution.title}
                 fill
-                className="object-cover"
+                className=" object-cover"
               />
             </div>
 
             {/* Content overlay */}
-            <div className="relative z-20 flex flex-col items-center justify-center p-4 h-full w-full">
+            <div className="relative inset-0 flex flex-col items-center justify-end p-0 h-full w-full">
+              <span key={currentSolution.id} className={`${estrella.className} text-[#fc4c01] text-[10rem] -m-10`}>{currentSolution.id}</span>
             </div>
           </div>
 
@@ -121,7 +131,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
               <div
                 key={solution.id}
                 className={cn(
-                  "flex-1 p-8 cursor-pointer transition-colors relative z-10",
+                  "flex-1 p-8 text-center items-center cursor-pointer transition-colors relative z-10",
                   index !== 2 && "mb-2", // Add margin between buttons except the last one
                   selectedSolution === solution.id
                     ? "bg-[#FC4C01] text-white"
@@ -132,11 +142,6 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
                 <h3 className="text-sm font-semibold">{solution.title}</h3>
               </div>
             ))}
-
-            {/* Connecting lines */}
-            <div className="absolute left-0 top-[calc(16.67%)] h-[4px] w-4 bg-orange-500"></div>
-            <div className="absolute left-0 top-[50%] h-[4px] w-4 bg-orange-500"></div>
-            <div className="absolute left-0 top-[calc(83.33%)] h-[4px] w-4 bg-orange-500"></div>
           </div>
         </div>
       </div>
