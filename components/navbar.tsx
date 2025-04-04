@@ -57,7 +57,7 @@ export default function Navbar() {
                 <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tsacomunica/" aria-label="Instagram">
                   <Instagram className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
                 </Link>
-                <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tsa-comunica-b6a49b21b/" aria-label="LinkedIn">
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/tsa-comunica" aria-label="LinkedIn">
                   <Linkedin className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
                 </Link>
                 <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">

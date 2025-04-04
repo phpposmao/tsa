@@ -17,24 +17,24 @@ export default function VideoSlider() {
       id: 1,
       title: "Maislaser Canoas",
       thumbnail: "/placeholder.svg?height=400&width=600&text=Video2",
-      videoSrc: "/video/DEPOIMENTO_TSA-ML-CANOAS.mp4",
+      videoSrc: "https://www.youtube.com/embed/P9lNXH5dRVU",
     },
     {
       id: 2,
       title: "Maislaser Tristeza",
       thumbnail: "/placeholder.svg?height=400&width=600&text=Video3",
-      videoSrc: "/video/DEPOIMENTO_TSA-ML-TRISTEZA.mp4",
+      videoSrc: "https://www.youtube.com/embed/mj4cpUml8yU",
     },
     {
       id: 3,
-      title: "Odontospecial Lucas do Rio Verde",
+      title: "Incompany",
       thumbnail: "/placeholder.svg?height=400&width=600&text=Video3",
-      videoSrc: "/video/DEPOIMENTO_TSA-ODONTO-LRV.mp4",
+      videoSrc: "https://www.youtube.com/embed/lZHSDl6ETyQ",
     },
   ]
 
   const [currentVideo, setCurrentVideo] = useState<number>(0)
-  const [isPlaying, setIsPlaying] = useState<boolean>(false)
+  //const [isPlaying, setIsPlaying] = useState<boolean>(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   const nextVideo = () => {
@@ -42,7 +42,7 @@ export default function VideoSlider() {
   }
 
   const prevVideo = () => {
-    setIsPlaying(false)
+    //setIsPlaying(false)
     setCurrentVideo((prev) => (prev - 1 + videos.length) % videos.length)
   }
 
@@ -52,7 +52,7 @@ export default function VideoSlider() {
     }
   }, [currentVideo])
 
-  const togglePlayPause = () => {
+  /*const togglePlayPause = () => {
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause()
@@ -63,12 +63,12 @@ export default function VideoSlider() {
       }
       setIsPlaying(!isPlaying)
     }
-  }
+  }*/
 
   return (
     <div className="relative">
       <div className="border-2 border-blue-600 rounded-xl p-2 aspect-video relative flex items-center justify-center overflow-hidden">
-        {/* Video element */}
+        {/* Video element 
         <video
           ref={videoRef}
           className="absolute inset-0 w-full h-full object-cover"
@@ -77,9 +77,17 @@ export default function VideoSlider() {
           <source src={videos[currentVideo].videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        */}
+
+        <iframe
+            className="absolute inset-0 w-full h-full object-cover"
+            src={videos[currentVideo].videoSrc}
+            title="Product Overview Video"
+            aria-hidden="true"
+        />
 
         {/* Play button overlay - only shown when video is not playing */}
-        {!isPlaying && (
+        {/*!isPlaying && (
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <Button
               className="rounded-full bg-blue-600 hover:bg-blue-700 h-16 w-16 flex items-center justify-center z-10"
@@ -88,7 +96,7 @@ export default function VideoSlider() {
               <Play className="h-8 w-8" />
             </Button>
           </div>
-        )}
+        )*/}
       </div>
 
       <div className="absolute top-1/2 -translate-y-1/2 left-4">
