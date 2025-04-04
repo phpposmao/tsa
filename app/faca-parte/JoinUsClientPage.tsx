@@ -485,11 +485,13 @@ export default function JoinUsClientPage() {
                       required
                       className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                     >
-                      <option value="">Selecione</option>
-                      <option value="immediate">Imediata</option>
-                      <option value="15days">15 dias</option>
-                      <option value="30days">30 dias</option>
-                      <option value="negotiable">A negociar</option>
+                      <option value="" className="text-orange-600">Selecione</option>
+                      <option value="Gestão de Tráfego" className="text-orange-600">Gestão de Tráfego</option>
+                      <option value="Atendimento" className="text-orange-600">Atendimento</option>
+                      <option value="Design" className="text-orange-600">Design</option>
+                      <option value="Desenvolvimento" className="text-orange-600">Desenvolvimento</option>
+                      <option value="Comercial" className="text-orange-600">Comercial</option>
+                      <option value="Outro" className="text-orange-600">Outro</option>
                     </select>
                   </div>
                   <div>

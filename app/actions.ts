@@ -28,7 +28,7 @@ export async function sendContactForm(formData: FormData) {
 
     await transporter.sendMail({
       from: '"TSA Website" <tsa@tsaacademy.com.br>',
-      to: "tsa@tsaacademy.com.br",
+      to: "alex@tsacomunica.com.br",
       subject: `Novo Lead TSA Website: ${name} ${surname}`,
       text: `
         Nome: ${name} ${surname}
@@ -86,27 +86,21 @@ export async function sendJobApplication(formData: FormData) {
 
     await transporter.sendMail({
       from: '"TSA Website" <tsa@tsaacademy.com.br>',
-      to: "tsa@tsaacademy.com.br",
-      subject: `Novo Lead TSA Website: ${name}`,
+      to: "bia.lavs@tsacomunica.com.br",
+      subject: `Novo Currículo TSA Website: ${name}`,
       text: `
         Nome: ${name}
         Email: ${email}
         Telefone: ${phone}
         Endereço: ${endereco}
-        experience: ${experience}
-        Cargo Atual: ${currentRole}
-        Education: ${education}
         Linkedin: ${linkedin}
         Portfólio: ${portfolio}
         PCD: ${pcd}
         Habilidades: ${skills}
         Linguas: ${languages}
         Ferramentas: ${tools}
-        Area: ${area}
-        Area(Outras): ${areaOps}
-        Motivação: ${motivation}
-        Salário Desejado: ${salary}
-        Disponibilidade: ${availability}
+        Area: ${availability}
+        Area(Outras): ${salary}
         Por que a TSA?: ${porque}
       `,
       attachments: [
