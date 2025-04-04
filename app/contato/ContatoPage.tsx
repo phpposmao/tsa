@@ -63,7 +63,7 @@ export default function ContatoPage() {
             <div className="h-full">
               <div className="h-[400px] rounded-xl overflow-hidden bg-gray-800 mb-4">
                 <iframe
-                  src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=TSA+Comunica,Americana+Brasil`}
+                  src={`https://maps.google.com/maps?width=600&height=400&hl=en&q=TSA%20Comunica&t=&z=14&ie=UTF8&iwloc=B&output=embed`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
