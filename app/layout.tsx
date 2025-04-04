@@ -59,7 +59,6 @@ export default function RootLayout({
       <body className={glancyr.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <Navbar />
-          <VideoPopup />
           {children}
           <Footer />
         </ThemeProvider>

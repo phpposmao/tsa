@@ -63,7 +63,7 @@ export default function ContatoPage() {
             <div className="h-full">
               <div className="h-[400px] rounded-xl overflow-hidden bg-gray-800 mb-4">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975829726973!2d-46.6497667!3d-23.5647244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUzLjAiUyA0NsKwMzgnNTkuMiJX!5e0!3m2!1spt-BR!2sbr!4v1625161234567!5m2!1spt-BR!2sbr"
+                  src={`https://www.google.com/maps/embed/v1/place?key=${process.env.MAPS_API_KEY}&q=TSA+Comunica,Americana+Brasil`}
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -72,7 +72,7 @@ export default function ContatoPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <div className="space-y-1 text-sm text-gray-400">
+              <div className="space-y-1 text-sm text-white">
                 <p>falecom@tsacomunica.com.br</p>
                 <p>19 3645.5986</p>
                 <p>19 98216.2892</p>

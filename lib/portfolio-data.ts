@@ -118,7 +118,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Identidade e comunicação estratégica para os eventos mensais de harmonização orofacial. Criamos materiais para redes sociais, WhatsApp e PDV, impulsionando a presença da Odonto Special no nicho.",
     mainImage:
-      "/image/cases/instagram-banner.png",
+      "/image/cases/instagram-card.png",
     headerImage:
       "/image/cases/instagram-banner.png",
     images: [
@@ -177,7 +177,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Uma campanha disruptiva para o Dia dos Namorados! Comunicação criativa, chamativa e alinhada ao público de depilação a laser, destacando combos promocionais.",
     mainImage:
-      "/image/cases/coracaopeludo-banner.png",
+      "/image/cases/coracaopeludo-card.png",
     headerImage:
       "/image/cases/coracaopeludo-banner.png",
     images: [
@@ -295,7 +295,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Pegamos o logo existente e elevamos a identidade visual! Cores, elementos e conceito que traduzem a essência da Dra. Jaqueline com mais força e presença.",
     mainImage:
-      "/image/cases/identidade-jaque-banner.png",
+      "/image/cases/identidade-jaque-card.png",
     headerImage:
       "/image/cases/identidade-jaque-banner.png",
     images: [

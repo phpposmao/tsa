@@ -13,7 +13,7 @@ export default function BlogPage() {
     <main className="min-h-screen bg-black flex align-middle justify-center items-center">
       <div className="w-4/5 bg-white rounded-xl mt-32 mb-16">
         {/* Hero Section */}
-        <section className="mx-auto px-4 pt-32 pb-16">
+        <section className="mx-auto px-4 pt-10 md:pt-32 pb-5 md:pb-16">
           <div className="text-center">
             <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-regular mb-4">
               Blog TSA
@@ -32,7 +32,7 @@ export default function BlogPage() {
         </section>
 
         {/* Blog Posts Grid */}
-        <section className="mx-auto px-5 md:px-20 py-16">
+        <section className="mx-auto px-5 md:px-20 py-5 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogPosts.map((post) => (
               <BlogCard key={post.id} post={post} />

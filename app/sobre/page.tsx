@@ -1,7 +1,6 @@
 import Image from "next/image"
 import type { Metadata } from "next"
 import VideoSlider from "@/components/video-slider"
-import VideoPopup from "@/components/video-popup"
 
 export const metadata: Metadata = {
   title: "Sobre Nós | TSA",
@@ -11,15 +10,15 @@ export const metadata: Metadata = {
 const team = [
   {
     name: "Gabriel Viana",
-    role: "Gestor de Tráfego",
+    role: "Produtor de Conteúdo",
     image: "/image/sobre/GA1.png",
     imageHover: "/image/sobre/GA2.png",
   },
   {
-    name: "Tiago Tasselli",
-    role: "Atendimento",
-    image: "/image/sobre/TIAGO1.png",
-    imageHover: "/image/sobre/TIAGO2.png",
+    name: "Fernando Lima",
+    role: "Diretor",
+    image: "/image/sobre/FER1.png",
+    imageHover: "/image/sobre/FER2.png",
   },
   {
     name: "Erick Renato",
@@ -74,7 +73,6 @@ const team = [
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black bg-gradientImg bg-repeat bg-right-top">
-      <VideoPopup />
 
       {/* Team Grid Section - Now full width */}
       <section className="w-full pt-32">

@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* Case Studies Section - Updated to match design and use portfolio data */}
-      <section className="py-16">
+      <section className="py-5 md:py-16">
         <div className="max-w-[1180px] mx-auto bg-black rounded-2xl p-5 md:p-20">
           <h2 className="text-4xl font-regular mb-2 text-center">
             CASES DE <span className="text-[#fc4c01] font-bold">GRANDE</span> SUCESSO
@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
       {/* International Section */}
-      <section className="max-w-[1180px] mx-auto px-4 py-16">
+      <section className="max-w-[1180px] mx-auto px-4 py-5 md:py-16">
         <div className="bg-radial from-[#000000] from-40% to-[#6e00db] rounded-3xl p-8 relative overflow-hidden">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/4 space-y-4 mb-8 md:mb-0 flex flex-col justify-between">
@@ -262,13 +262,13 @@ export default function Home() {
               <div className="bg-linearToBr from-[#6e00db] to-[#000000] backdrop-blur-sm rounded-3xl p-0 flex flex-col min-h-36">
                 <div className="flex flex-row justify-center items-center mb-1 rounded-t-3xl p-2 bg-[#10021B]">
                   <Image
-                    src={"/image/home/bandeira-brasil.png"}
-                    alt="Bandeira do Brasil"
+                    src={"/image/home/bandeira-alemanha.png"}
+                    alt="Bandeira da Alemanha"
                     width={45}
                     height={25}
                     className="mr-4"
                   />
-                  <h3 className="text-xl font-light">Brasil</h3>
+                  <h3 className="text-xl font-light">Alemanha</h3>
                 </div>
                 
                 <div className="p-3 rounded-b-3xl flex flex-wrap justify-center items-center h-full">

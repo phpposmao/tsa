@@ -121,7 +121,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
 
             {/* Content overlay */}
             <div className="relative inset-0 flex flex-col items-center justify-end p-0 h-full w-full">
-              <span key={currentSolution.id} className={`${estrella.className} text-[#fc4c01] text-[10rem] -m-10`}>{currentSolution.id}</span>
+              <span key={currentSolution.id} className={`${estrella.className} text-[#fc4c01] text-[6rem] md:text-[10rem] md:-m-12`}>{currentSolution.id}</span>
             </div>
           </div>
 

@@ -10,25 +10,21 @@ export default function PartnersSlider({ speed = 30 }: PartnersSliderProps) {
     "/image/home/logos/adere-logo.png",
     "/image/home/logos/black-decker-logo.png",
     "/image/home/logos/huehoco-ale-logo.png",
-    "/image/home/logos/huehoco-logo.png",
-    "/image/home/logos/lafiesta-logo.png",
     "/image/home/logos/oster-logo.png",
+    "/image/home/logos/huehoco-logo.png",
     "/image/home/logos/sib-logo.png",
     "/image/home/logos/tecnofeal-logo.png",
-    "/image/home/logos/tiotom-logo.png",
     "/image/home/logos/adere-logo.png",
     "/image/home/logos/black-decker-logo.png",
     "/image/home/logos/huehoco-ale-logo.png",
-    "/image/home/logos/huehoco-logo.png",
-    "/image/home/logos/lafiesta-logo.png",
     "/image/home/logos/oster-logo.png",
+    "/image/home/logos/huehoco-logo.png",
     "/image/home/logos/sib-logo.png",
     "/image/home/logos/tecnofeal-logo.png",
-    "/image/home/logos/tiotom-logo.png",
   ]
 
   return (
-    <div className="overflow-hidden w-full bg-black py-8">
+    <div className="overflow-hidden w-full py-8">
       <div className="relative flex">
         <div className="animate-marquee flex items-center gap-16 px-8">
           {partners.map((partner, index) => (
