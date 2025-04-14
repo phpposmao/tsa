@@ -122,7 +122,7 @@ export default function CasesPage() {
                 <div className="bg-white rounded-xl overflow-hidden">
                   <div className="aspect-[16/9] relative">
                     <Image
-                      src={project.headerImage || project.mainImage}
+                      src={project.mainImage}
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -193,15 +193,6 @@ export default function CasesPage() {
                     <span className="mx-4">Ano: {currentProject.year}</span>
                   </div>
                   <p className="text-gray-500 mt-4 max-w-2xl mx-auto">{currentProject.description}</p>
-                </div>
-
-                {/* Video Section */}
-                <div className="aspect-video relative rounded-xl overflow-hidden bg-gray-200 mb-8">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Button size="lg" className="rounded-full bg-white text-gray-800 hover:bg-gray-100">
-                      <Play className="h-8 w-8" />
-                    </Button>
-                  </div>
                 </div>
 
                 {/* Project Images */}

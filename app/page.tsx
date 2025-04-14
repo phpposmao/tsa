@@ -96,7 +96,7 @@ export default function Home() {
               <Link href={`/cases?id=${portfolioProjects[0]?.id}`} className="block h-full">
                 <div className="relative rounded-xl overflow-hidden h-full bg-red-500">
                   <Image
-                    src={portfolioProjects[0]?.mainImage || "/placeholder.svg?height=600&width=400"}
+                    src={portfolioProjects[0]?.alternativeBanner || portfolioProjects[0]?.mainImage}
                     alt={portfolioProjects[0]?.title || "Case"}
                     fill
                     className="object-cover"
@@ -116,7 +116,7 @@ export default function Home() {
                   <Link key={project.id} href={`/cases?id=${project.id}`} className="block">
                     <div className="relative rounded-xl overflow-hidden aspect-square bg-blue-500">
                       <Image
-                        src={project.mainImage || "/placeholder.svg?height=300&width=300"}
+                        src={project.alternativeBanner || project.mainImage}
                         alt={project.title}
                         fill
                         className="object-cover"
@@ -139,7 +139,7 @@ export default function Home() {
                   <Link key={project.id} href={`/cases?id=${project.id}`} className="block">
                     <div className="relative rounded-xl overflow-hidden aspect-[4/3] bg-[#fc4c01]">
                       <Image
-                        src={project.mainImage || "/placeholder.svg?height=300&width=400"}
+                        src={project.alternativeBanner || project.mainImage}
                         alt={project.title}
                         fill
                         className="object-cover"
@@ -157,8 +157,8 @@ export default function Home() {
 
           <div className="flex justify-center">
             <PrimaryButton className="px-6 py-3 md:text-sm">
-              <Link href="/contato" className="flex text-center">
-                TRANSFORME SEU NEGÓCIO <ChevronRight className="ml-2 h-4 w-4" />
+              <Link href="/cases" className="flex text-center">
+                CONFIRA OUTROS CASES <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
             </PrimaryButton>
           </div>

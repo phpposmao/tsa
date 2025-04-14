@@ -39,12 +39,6 @@ const team = [
     imageHover: "/image/sobre/GU2.png",
   },
   {
-    name: "Ítalo Miranda",
-    role: "Comercial e Negócios",
-    image: "/image/sobre/ITALO1.png",
-    imageHover: "/image/sobre/ITALO2.png",
-  },
-  {
     name: "Erico Tereran",
     role: "Diretor de Arte",
     image: "/image/sobre/ERICO1.png",
@@ -67,6 +61,12 @@ const team = [
     role: "CEO & Diretor",
     image: "/image/sobre/ALEX1.png",
     imageHover: "/image/sobre/ALEX2.png",
+  },
+  {
+    name: "",
+    role: "",
+    image: "/image/sobre/logo-tsa-sobre.png",
+    imageHover: "/image/sobre/logo-tsa-sobre.png",
   },
 ]
 

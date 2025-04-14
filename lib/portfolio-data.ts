@@ -8,6 +8,7 @@ export interface PortfolioProject {
   images: string[]
   video?: string
   mainImage: string
+  alternativeBanner?: string
   headerImage?: string
   contentSections?: {
     image: string
@@ -36,9 +37,11 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Campanha com apelo afetivo para o Mês das Mães! Criamos uma comunicação que conecta mães e filhos, destacando o cuidado e dando visibilidade à película antivandalismo da marca.",
     mainImage:
-      "/image/cases/mesdasmaes-banner.png",
+      "/image/cases/mesdasmaes-main2.png",
     headerImage:
       "/image/cases/mesdasmaes-banner.png",
+    alternativeBanner:
+      "/image/cases/mesdasmaes-main.png",
     images: [
       "/image/cases/mesdasmaes-imagem1.png",
       "/image/cases/mesdasmaes-imagem2.png",
@@ -63,7 +66,7 @@ export const portfolioProjects: PortfolioProject[] = [
     category: "Campanhas",
     description:
       "Ação com Sabrina Sato e Dona Kika para celebrar a força feminina! Conteúdo estratégico focado na autoestima e saúde bucal da mulher.",
-    mainImage: "/image/cases/semanadamulher-banner.png",
+    mainImage: "/image/cases/semanadamulher-main.png",
     headerImage:
       "/image/cases/semanadamulher-banner.png",
     images: [
@@ -118,7 +121,9 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Identidade e comunicação estratégica para os eventos mensais de harmonização orofacial. Criamos materiais para redes sociais, WhatsApp e PDV, impulsionando a presença da Odonto Special no nicho.",
     mainImage:
-      "/image/cases/instagram-card.png",
+      "/image/cases/instagram-main.png",
+    alternativeBanner:
+      "/image/cases/instagram-main2.png",
     headerImage:
       "/image/cases/instagram-banner.png",
     images: [
@@ -140,7 +145,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Campanha digital do planejamento à entrega! Criamos roteiro, regulamento, materiais de PDV, gestão de tráfego e tudo o que envolve um sorteio de sucesso.",
     mainImage:
-      "/image/cases/showdepremios-banner.png",
+      "/image/cases/showdepremios-main.png",
     headerImage:
       "/image/cases/showdepremios-banner.png",
     images: [
@@ -177,7 +182,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Uma campanha disruptiva para o Dia dos Namorados! Comunicação criativa, chamativa e alinhada ao público de depilação a laser, destacando combos promocionais.",
     mainImage:
-      "/image/cases/coracaopeludo-card.png",
+      "/image/cases/coracaopeludo-main.png",
     headerImage:
       "/image/cases/coracaopeludo-banner.png",
     images: [
@@ -214,7 +219,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Uma campanha que conversa com a marca! Comunicação visual marcante para divulgar os descontos de aniversário da Maislaser e atrair clientes.",
     mainImage:
-      "/image/cases/liquidaaniversario-banner.png",
+      "/image/cases/liquidaaniversario-main.png",
     headerImage:
       "/image/cases/liquidaaniversario-banner.png",
     images: [
@@ -246,7 +251,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Demos visibilidade ao amor na terceira idade! Campanha emocional e conectada ao público da marca, valorizando histórias e sorrisos.",
     mainImage:
-      "/image/cases/namorados-banner.png",
+      "/image/cases/namorados-main.png",
     headerImage:
       "/image/cases/namorados-banner.png",
     images: [
@@ -273,7 +278,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Conscientização infantil com a Odonto Special! Criamos identidade visual e cartilha educativa para pais sobre os cuidados odontológicos na infância.",
     mainImage:
-      "/image/cases/sorrisoodonto-banner.png",
+      "/image/cases/sorrisoodonto-main.png",
     headerImage:
       "/image/cases/sorrisoodonto-banner.png",
     images: [
@@ -295,7 +300,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Pegamos o logo existente e elevamos a identidade visual! Cores, elementos e conceito que traduzem a essência da Dra. Jaqueline com mais força e presença.",
     mainImage:
-      "/image/cases/identidade-jaque-card.png",
+      "/image/cases/identidade-jaque-main.png",
     headerImage:
       "/image/cases/identidade-jaque-banner.png",
     images: [
@@ -352,7 +357,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Do nome à identidade visual, criamos o podcast oficial da Odonto Special. Conteúdo relevante sobre franquias odontológicas, com um visual alinhado à marca.",
     mainImage:
-      "/image/cases/podcast-banner.png",
+      "/image/cases/podcast-main.png",
     headerImage:
       "/image/cases/podcast-banner.png",
     images: [
@@ -399,7 +404,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Design estratégico para comunicar a essência da clínica em um outdoor. Fotografia e identidade visual alinhadas ao público e credibilidade da Dra. Jaqueline.",
     mainImage:
-      "/image/cases/outdoor-jaque-banner.png",
+      "/image/cases/outdoor-jaque-main.png",
     headerImage:
       "/image/cases/outdoor-jaque-banner.png",
     images: [
@@ -421,7 +426,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Site one page intuitivo e estratégico para campanha eleitoral. Comunicação clara, história, propostas e integração com redes sociais para maior engajamento.",
     mainImage:
-      "/image/cases/patriciagama-banner.png",
+      "/image/cases/patriciagama-main.png",
     headerImage:
       "/image/cases/patriciagama-banner.png",
     images: [
@@ -429,7 +434,7 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     contentSections: [
       {
-        image: "/image/cases/sorrisoodonto-imagem1.png",
+        image: "/image/cases/patriciagama-imagem1.png",
         description: "Website - Patricia Gama - TSA",
       },
     ],
@@ -443,7 +448,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Criamos do zero o site da Maximus Segurança! Design intuitivo, apresentação clara dos serviços e expertise, fortalecendo credibilidade e presença digital da marca.",
     mainImage:
-      "/image/cases/maximos-banner.png",
+      "/image/cases/maximos-main.png",
     headerImage:
       "/image/cases/maximos-banner.png",
     images: [
@@ -451,7 +456,7 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
     contentSections: [
       {
-        image: "/image/cases/sorrisoodonto-imagem1.png",
+        image: "/image/cases/maximos-imagem1.png",
         description: "Website - Maximus Segurança - TSA",
       },
     ],
@@ -465,7 +470,7 @@ export const portfolioProjects: PortfolioProject[] = [
     description:
       "Rebranding completo! Novo layout, mais moderno e funcional. Melhor usabilidade, SEO estratégico e reforço na segurança. Integração direta com WhatsApp e e-mail.",
     mainImage:
-      "/image/cases/site-nani-banner.png",
+      "/image/cases/site-nani-main.png",
     headerImage:
       "/image/cases/site-nani-banner.png",
     images: [
