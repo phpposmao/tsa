@@ -19,12 +19,10 @@ export interface PortfolioProject {
 export const categories = [
   "Branding",
   "Marketing",
-  "Gestão de Tráfego",
-  "Social Media",
-  "Motion Design",
+  "Social Media", 
   "Campanhas",
   "Eventos",
-  "Relações Públicas",
+  "Sites",
 ]
 
 export const portfolioProjects: PortfolioProject[] = [
@@ -33,7 +31,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Mãe, Cuidado Sempre Presente",
     client: "Nani Sound",
     year: 2024,
-    category: "Campanhas",
+    category: "Marketing",
     description:
       "Campanha com apelo afetivo para o Mês das Mães! Criamos uma comunicação que conecta mães e filhos, destacando o cuidado e dando visibilidade à película antivandalismo da marca.",
     mainImage:
@@ -178,7 +176,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Chega de Coração Peludo",
     client: "Maislaser",
     year: 2024,
-    category: "Marketing",
+    category: "Campanhas",
     description:
       "Uma campanha disruptiva para o Dia dos Namorados! Comunicação criativa, chamativa e alinhada ao público de depilação a laser, destacando combos promocionais.",
     mainImage:
@@ -274,7 +272,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Sorriso Pequeno, Cuidado Gigante",
     client: "Odonto Special",
     year: 2024,
-    category: "Campanhas",
+    category: "Marketing",
     description:
       "Conscientização infantil com a Odonto Special! Criamos identidade visual e cartilha educativa para pais sobre os cuidados odontológicos na infância.",
     mainImage:
@@ -422,7 +420,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Website - Patricia Gama",
     client: "Patricia Gama",
     year: 2024,
-    category: "Marketing",
+    category: "Sites",
     description:
       "Site one page intuitivo e estratégico para campanha eleitoral. Comunicação clara, história, propostas e integração com redes sociais para maior engajamento.",
     mainImage:
@@ -444,7 +442,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Website - Maximus Segurança",
     client: "Maximus Segurança",
     year: 2024,
-    category: "Marketing",
+    category: "Sites",
     description:
       "Criamos do zero o site da Maximus Segurança! Design intuitivo, apresentação clara dos serviços e expertise, fortalecendo credibilidade e presença digital da marca.",
     mainImage:
@@ -466,7 +464,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Website - Nani Sound Franqueadora",
     client: "Maximus Segurança",
     year: 2024,
-    category: "Marketing",
+    category: "Sites",
     description:
       "Rebranding completo! Novo layout, mais moderno e funcional. Melhor usabilidade, SEO estratégico e reforço na segurança. Integração direta com WhatsApp e e-mail.",
     mainImage:

@@ -52,7 +52,7 @@ export default function Footer() {
             <p className="text-sm text-gray-400 mb-4">19 3645-5986</p>
 
             <div className="flex space-x-4">
-              <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/tsacomunica" aria-label="Facebook">
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/TSA-Comunica/61559729675472/#" aria-label="Facebook">
                 <Facebook className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
               <Link target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tsacomunica/" aria-label="Instagram">

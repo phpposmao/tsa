@@ -109,9 +109,9 @@ export default function AboutPage() {
 
       {/* About Section */}
       <section className="max-w-[1180px] mx-auto px-4 pb-8 pt-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular mb-6">Sobre nós</h1>
-          <div className="bg-blue-800 text-white text-xl md:text-3x1 font-regular py-2 px-20 rounded-full inline-block mb-8">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular mb-2">Sobre nós</h1>
+          <div className="bg-blue-800 text-white text-xl md:text-3x1 font-regular py-2 px-20 rounded-md inline-block mb-20">
             Transformando marcas desde 2017
           </div>
           <p className="text-gray-300 text:sm md:text-lg leading-relaxed text-center">

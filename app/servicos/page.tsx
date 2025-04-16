@@ -69,7 +69,7 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-black bg-gradientImg bg-repeat bg-right-top">
       {/* Hero Section */}
-      <section className="max-w-[1180px] mx-auto px-4 pt-32 pb-16">
+      <section className="max-w-[1080px] mx-auto px-4 pt-32 pb-16">
         <div className="max-w-3xl md:ml-24">
           <h1 className="text-5xl md:text-6xl lg:text-7xl text-white mb-4 leading-tight">
             <span className="font-regular">
@@ -87,7 +87,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Section */}
-      <section className="max-w-[1180px] mx-auto px-4 py-16">
+      <section className="max-w-[980px] mx-auto px-4 py-16">
         <div className="space-y-32">
           {services.map((service) => (
             <div

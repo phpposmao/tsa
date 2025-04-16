@@ -148,9 +148,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
 
       <div className="text-left mt-12 text-sm text-gray-300 max-w-4xl mx-auto">
         <p>
-          Combinamos estratégias e soluções que impulsionam os seus negócios. Garantimos resultados concretos e
-          duradouros para sua marca ou carreira. Nossa abordagem integrada permite que cada ação seja parte de uma
-          estratégia maior, criando consistência e maximizando o impacto em todos os pontos de contato com seu público.
+          Cuidamos da proteção e do fortalecimento da sua marca, garantindo registros, patentes e estratégias para assegurar exclusividade e diferenciação no mercado. Atuamos na construção de identidade, gestão de ativos intangíveis e no posicionamento estratégico para que sua empresa tenha reconhecimento e credibilidade.
         </p>
       </div>
     </div>

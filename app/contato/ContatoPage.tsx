@@ -46,7 +46,7 @@ export default function ContatoPage() {
   return (
     <main className="min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="max-w-[1180px] mx-auto px-4 pt-32 pb-16">
+      <section className="max-w-[880px] mx-auto px-4 pt-28 pb-10">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular leading-tight">
             Preparados para <div className="text-[#fc4c01]">crescer com a gente?</div>
@@ -56,12 +56,12 @@ export default function ContatoPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="max-w-[1180px] mx-auto px-4 py-16">
+      <section className="max-w-[980px] mx-auto px-4 py-10">
         <div className="bg-radial from-[#000000] from-50% to-[#fc4c01] rounded-3xl p-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Map */}
             <div className="h-full">
-              <div className="h-[400px] rounded-xl overflow-hidden bg-gray-800 mb-4">
+              <div className="h-[300px] rounded-xl overflow-hidden bg-gray-800 mb-4">
                 <iframe
                   src={`https://maps.google.com/maps?width=600&height=400&hl=en&q=TSA%20Comunica&t=&z=14&ie=UTF8&iwloc=B&output=embed`}
                   width="100%"
@@ -92,7 +92,7 @@ export default function ContatoPage() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-2">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-xs md:text-sm text-[#fc4c01] mb-1">
@@ -103,7 +103,7 @@ export default function ContatoPage() {
                       id="name"
                       name="name"
                       required
-                      className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                      className="w-full px-4 py-2 leading-4 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                     />
                   </div>
                   <div>
@@ -115,7 +115,7 @@ export default function ContatoPage() {
                       id="surname"
                       name="surname"
                       required
-                      className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                      className="w-full px-4 py-2 leading-4 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                     />
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function ContatoPage() {
                       id="email"
                       name="email"
                       required
-                      className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                      className="w-full px-4 py-2 leading-4 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                     />
                   </div>
                   <div>
@@ -142,7 +142,7 @@ export default function ContatoPage() {
                       id="phone"
                       name="phone"
                       required
-                      className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                      className="w-full px-4 py-2 leading-4 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                     />
                   </div>
                 </div>
@@ -155,7 +155,7 @@ export default function ContatoPage() {
                     type="text"
                     id="company"
                     name="company"
-                    className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                    className="w-full px-4 py-2 leading-4 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                   />
                 </div>
 
@@ -168,7 +168,7 @@ export default function ContatoPage() {
                     name="message"
                     rows={4}
                     required
-                    className="w-full px-4 py-2 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
+                    className="w-full px-4 py-2 leading-4 bg-white/10 rounded-lg border border-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500"
                   ></textarea>
                 </div>
 
@@ -182,16 +182,16 @@ export default function ContatoPage() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="max-w-[1180px] mx-auto px-4 py-16">
+      <section className="max-w-[1180px] mx-auto px-4 py-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-[#fc4c01] mb-8">Estamos empolgados para conhecer vocês!</h2>
           <div className="space-y-6 mb-12">
-            <p className="text-gray-300">
+            <p className="text-white">
               Na TSA, acreditamos em conexões autênticas e em resultados que fazem a diferença. Se você quer que a sua
               marca seja atendida por uma equipe criativa, estratégica e comprometida, fale com a gente! Estamos prontos
               para entender as suas necessidades e transformar suas ideias em campanhas impactantes.
             </p>
-            <p className="text-gray-300">
+            <p className="text-white">
               Agora, se o seu objetivo é fazer parte do nosso time, venha somar com a gente! Buscamos pessoas
               talentosas, criativas e que querem crescer junto. Aqui, valorizamos a colaboração, a inovação e o desejo
               de fazer acontecer.

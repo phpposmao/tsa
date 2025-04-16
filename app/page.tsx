@@ -29,8 +29,7 @@ export default function Home() {
           </div>
           <div className="max-w-3xl mx-auto">
             <p className="text-white mb-8 font-light tracking-wider text-left">
-              <strong>Com 10 anos de história</strong>, a TSA Comunicação transformou-se em um hub de negócios para garantir que
-              celebridades e marcas atinjam seus objetivos, seja dentro ou fora das telas.
+              <strong>Com 10 anos de história</strong>, a TSA Comunica se transformou em um hub de negócios para aumentar sua visibilidade, engajar seu público e fortalecer sua marca no mercado.
             </p>
           </div>
           <div className="flex justify-center">
@@ -60,10 +59,7 @@ export default function Home() {
           <div className="flex flex-col text-center justify-center items-center md:items-start md:pr-20">
             <h2 className="text-4xl font-regular md:text-left mb-10 text-center">Sobre nós</h2>
             <p className="text-gray-300 mb-10 md:text-left">
-              Na TSA Comunicação, temos atuado consistente desde 2007 com um time formado por agentes experientes e
-              multidisciplinares. Desenvolvemos estratégias integradas de branding e marketing para marcas e
-              personalidades, gerando resultados mensuráveis. Nosso compromisso é transformar ideias em ações concretas
-              que impulsionam seu crescimento e geram resultados reais.
+            Na TSA Comunica, nossa jornada começou em 2017 com uma missão clara:<strong>ajudar empresas a se destacarem por meio de estratégias integradas de branding e marketing</strong>. Desde então, temos nos dedicado a entender as necessidades específicas de cada cliente e a entregar soluções personalizadas que geram resultados reais.
             </p>
             <PrimaryButton className="px-6 py-3 text-sm max-w-52">
               <Link href="/sobre">
