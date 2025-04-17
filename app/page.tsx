@@ -59,7 +59,7 @@ export default function Home() {
           <div className="flex flex-col text-center justify-center items-center md:items-start md:pr-20">
             <h2 className="text-4xl font-regular md:text-left mb-10 text-center">Sobre nós</h2>
             <p className="text-gray-300 mb-10 md:text-left">
-            Na TSA Comunica, nossa jornada começou em 2017 com uma missão clara:<strong>ajudar empresas a se destacarem por meio de estratégias integradas de branding e marketing</strong>. Desde então, temos nos dedicado a entender as necessidades específicas de cada cliente e a entregar soluções personalizadas que geram resultados reais.
+            Na TSA Business Hub, nossa jornada começou em 2017 com uma missão clara:<strong>ajudar empresas a se destacarem por meio de estratégias integradas de branding e marketing</strong>. Desde então, temos nos dedicado a entender as necessidades específicas de cada cliente e a entregar soluções personalizadas que geram resultados reais.
             </p>
             <PrimaryButton className="px-6 py-3 text-sm max-w-52">
               <Link href="/sobre">

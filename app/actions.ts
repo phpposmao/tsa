@@ -27,7 +27,7 @@ export async function sendContactForm(formData: FormData) {
     console.log({ name, surname, email, phone, company, message })
 
     await transporter.sendMail({
-      from: '"TSA Website" <tsa@tsaacademy.com.br>',
+      from: '"TSA Formulários" <tsa@tsaacademy.com.br>',
       to: "alex@tsacomunica.com.br",
       subject: `Novo Lead TSA Website: ${name} ${surname}`,
       text: `
@@ -85,7 +85,7 @@ export async function sendJobApplication(formData: FormData) {
     const curriculo = formData.get("curriculo")
 
     await transporter.sendMail({
-      from: '"TSA Website" <tsa@tsaacademy.com.br>',
+      from: '"TSA Formulários" <tsa@tsaacademy.com.br>',
       to: "bia.lavs@tsacomunica.com.br",
       subject: `Novo Currículo TSA Website: ${name}`,
       text: `
@@ -144,5 +144,49 @@ export async function sendJobApplication(formData: FormData) {
   } catch (error) {
     console.error("Error sending job application:", error)
     return { success: false, message: "Erro ao enviar candidatura. Por favor, tente novamente." }
+  }
+}
+
+export async function sendFormResults(formData: Record<string, any>, formType: string, score: number, result: any) {
+  try {
+    // Format the answers for email
+    let answersHtml = ""
+    for (const [key, value] of Object.entries(formData)) {
+      if (Array.isArray(value)) {
+        answersHtml += `<p><strong>${key}:</strong> ${value.join(", ")}</p>`
+      } else {
+        answersHtml += `<p><strong>${key}:</strong> ${value}</p>`
+      }
+    }
+
+    // Prepare email content
+    const mailOptions = {
+      from: '"TSA Formulários" <tsa@tsaacademy.com.br>',
+      to: "tsa@tsaacademy.com.br", // Replace with recipient email
+      subject: `Resultado do Formulário de ${formType}: ${result.title}`,
+      html: `
+        <h1>Resultado do Formulário de ${formType}</h1>
+        <h2>${result.title}</h2>
+        <p>${result.description}</p>
+        
+        <h3>Recomendações:</h3>
+        <ul>
+          ${result.recommendations.map((rec: string) => `<li>${rec}</li>`).join("")}
+        </ul>
+        
+        <h3>Pontuação:</h3>
+        <p>${score} pontos</p>
+        
+        <h3>Respostas do Usuário:</h3>
+        ${answersHtml}
+      `,
+    }
+  
+    await transporter.sendMail(mailOptions);
+
+    return { success: true, message: "Resultados enviados com sucesso!" }
+  } catch (error) {
+    console.error("Error sending form results:", error)
+    return { success: false, message: "Erro ao enviar resultados. Por favor, tente novamente." }
   }
 }

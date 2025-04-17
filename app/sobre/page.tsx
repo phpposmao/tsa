@@ -115,7 +115,7 @@ export default function AboutPage() {
             Transformando marcas desde 2017
           </div>
           <p className="text-gray-300 text:sm md:text-lg leading-relaxed text-center">
-            A TSA Business & Hub nasceu em 2017 com uma missão clara:{" "}
+            A TSA Business Hub nasceu em 2017 com uma missão clara:{" "}
             <strong className="text-white">
               ajudar empresas a se destacarem no mercado com estratégias integradas de gestão de marca e marketing
             </strong>
