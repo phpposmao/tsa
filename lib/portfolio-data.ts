@@ -59,7 +59,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "semana-da-mulher",
     title: "Semana da Mulher Odonto Special",
-    client: "Odonto Special",
+    client: "Odonto Special by Sabrina Sato",
     year: 2024,
     category: "Campanhas",
     description:
@@ -113,7 +113,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "hof-day-campaign",
     title: "HOF Day",
-    client: "Odonto Special",
+    client: "Odonto Special by Sabrina Sato",
     year: 2024,
     category: "Social Media",
     description:
@@ -137,7 +137,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "show-de-premios",
     title: "Show de Prêmios",
-    client: "Maislaser",
+    client: "Maislaser by Ana Hickmann",
     year: 2024,
     category: "Campanhas",
     description:
@@ -174,7 +174,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "coracao-peludo",
     title: "Chega de Coração Peludo",
-    client: "Maislaser",
+    client: "Maislaser by Ana Hickmann",
     year: 2024,
     category: "Campanhas",
     description:
@@ -211,7 +211,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "liquida-aniversario",
     title: "Liquida Aniversário",
-    client: "Mais Laser",
+    client: "Maislaser by Ana Hickmann",
     year: 2024,
     category: "Campanhas",
     description:
@@ -243,7 +243,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "namorados-campaign",
     title: "Mês dos Namorados",
-    client: "Odonto Special",
+    client: "Odonto Special by Sabrina Sato",
     year: 2024,
     category: "Campanhas",
     description:
@@ -270,7 +270,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "sorriso-odonto",
     title: "Sorriso Pequeno, Cuidado Gigante",
-    client: "Odonto Special",
+    client: "Odonto Special by Sabrina Sato",
     year: 2024,
     category: "Marketing",
     description:
@@ -349,7 +349,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "podcast",
     title: "Podcast Special Cast",
-    client: "Odonto Special",
+    client: "Odonto Special by Sabrina Sato",
     year: 2024,
     category: "Eventos",
     description:
@@ -462,7 +462,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "nani-site",
     title: "Website - Nani Sound Franqueadora",
-    client: "Maximus Segurança",
+    client: "Nani Sound",
     year: 2024,
     category: "Sites",
     description:

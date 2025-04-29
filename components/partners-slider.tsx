@@ -41,7 +41,7 @@ export default function PartnersSlider({ speed = 30 }: PartnersSliderProps) {
   return (
     <div className="overflow-hidden w-full py-8 bg-black">
       <div className="relative flex">
-        <div className="animate-marquee flex items-center gap-16 px-8">
+        <div className="animate-marquee flex items-center gap-8 px-8">
           {partners.map((partner, index) => (
             <div key={`partner-1-${index}`} className="flex-shrink-0">
               <Image

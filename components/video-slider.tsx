@@ -25,12 +25,6 @@ export default function VideoSlider() {
       thumbnail: "/placeholder.svg?height=400&width=600&text=Video3",
       videoSrc: "https://www.youtube.com/embed/mj4cpUml8yU",
     },
-    {
-      id: 3,
-      title: "Incompany",
-      thumbnail: "/placeholder.svg?height=400&width=600&text=Video3",
-      videoSrc: "https://www.youtube.com/embed/lZHSDl6ETyQ",
-    },
   ]
 
   const [currentVideo, setCurrentVideo] = useState<number>(0)

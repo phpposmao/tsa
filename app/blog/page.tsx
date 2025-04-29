@@ -15,7 +15,7 @@ export default function BlogPage() {
         {/* Hero Section */}
         <section className="mx-auto px-4 pt-10 md:pt-32 pb-5 md:pb-16">
           <div className="text-center">
-            <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-regular mb-4">
+            <h1 className="text-black text-4xl md:text-5xl lg:text-6xl font-regular mb-4">
               Blog TSA
               <br />
               Business & Hub

@@ -4,7 +4,7 @@ import VideoSlider from "@/components/video-slider"
 
 export const metadata: Metadata = {
   title: "Sobre Nós | TSA",
-  description: "Conheça a equipe TSA e nossa história de transformação de marcas desde 2017.",
+  description: "Conheça a equipe TSA e nossa história de transformação de marcas desde 2015",
 }
 
 const team = [
@@ -112,10 +112,10 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular mb-2">Sobre nós</h1>
           <div className="bg-blue-800 text-white text-xl md:text-3x1 font-regular py-2 px-20 rounded-md inline-block mb-20">
-            Transformando marcas desde 2017
+            Transformando marcas desde 2015
           </div>
           <p className="text-gray-300 text:sm md:text-lg leading-relaxed text-center">
-            A TSA Business Hub nasceu em 2017 com uma missão clara:{" "}
+            A TSA Business Hub nasceu em 2015 com uma missão clara:{" "}
             <strong className="text-white">
               ajudar empresas a se destacarem no mercado com estratégias integradas de gestão de marca e marketing
             </strong>

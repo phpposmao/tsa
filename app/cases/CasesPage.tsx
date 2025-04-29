@@ -42,13 +42,31 @@ export default function CasesPage() {
   // Navigate to next project
   const nextProject = () => {
     if (filteredProjects.length === 0) return
-    setCurrentIndex((prev) => (prev + 1) % filteredProjects.length)
+
+    if (isGalleryView) {
+      setCurrentIndex((prev) => (prev + 1) % filteredProjects.length)
+    } else {
+      const newIndex = (currentIndex + 1) % filteredProjects.length
+      setCurrentIndex(newIndex)
+      const nextProjectId = filteredProjects[newIndex].id
+      router.push(`/cases?id=${nextProjectId}`, { scroll: false })
+      window.scrollTo(0, 0)
+    }
   }
 
   // Navigate to previous project
   const prevProject = () => {
     if (filteredProjects.length === 0) return
-    setCurrentIndex((prev) => (prev - 1 + filteredProjects.length) % filteredProjects.length)
+
+    if (isGalleryView) {
+      setCurrentIndex((prev) => (prev - 1 + filteredProjects.length) % filteredProjects.length)
+    } else {
+      const newIndex = (currentIndex - 1 + filteredProjects.length) % filteredProjects.length
+      setCurrentIndex(newIndex)
+      const prevProjectId = filteredProjects[newIndex].id
+      router.push(`/cases?id=${prevProjectId}`, { scroll: false })
+      window.scrollTo(0, 0)
+    }
   }
 
   // Handle clicking on a project in gallery view
@@ -73,7 +91,7 @@ export default function CasesPage() {
       {/* Hero Section */}
       <section className="mx-auto pt-32 pb-8">
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-regular mb-4">
             Nossos
             <br />
             <span className="text-[#fc4c01]">cases</span>

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Youtube, Smartphone } from "lucide-react"
-import { FaWhatsapp } from "react-icons/fa";
+import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -49,7 +49,6 @@ export default function Footer() {
             <p className="text-sm text-gray-400 mb-2">Av. Europa, 233 - Vila Cordenonsi, Americana - SP, 18406-460</p>
             <p className="text-sm text-gray-400 mb-2">falecom@tsacomunica.com.br</p>
             <p className="text-sm text-gray-400 mb-2">19 98216-2892</p>
-            <p className="text-sm text-gray-400 mb-4">19 3645-5986</p>
 
             <div className="flex space-x-4">
               <Link target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/TSA-Comunica/61559729675472/#" aria-label="Facebook">
@@ -61,11 +60,14 @@ export default function Footer() {
               <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/tsa-comunica" aria-label="LinkedIn">
                 <Linkedin className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
-              <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">
-                <FaWhatsapp className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
+              <Link target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@aculpaedatsa" aria-label="Tiktok">
+                <FaTiktok className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
               <Link target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCCsNfhTMFUWrIhOQ6QIZajg" aria-label="YouTube">
                 <Youtube className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+              </Link>
+              <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">
+                <FaWhatsapp className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
               </Link>
             </div>
           </div>

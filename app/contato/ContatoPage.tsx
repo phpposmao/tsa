@@ -48,7 +48,7 @@ export default function ContatoPage() {
       {/* Hero Section */}
       <section className="max-w-[880px] mx-auto px-4 pt-28 pb-10">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-regular leading-tight">
             Preparados para <div className="text-[#fc4c01]">crescer com a gente?</div>
           </h1>
           <div className="h-1 w-full bg-gradient-to-r from-[#fc4c01] via-red-500 to-purple-600 mt-4"></div>
@@ -74,7 +74,6 @@ export default function ContatoPage() {
               </div>
               <div className="space-y-1 text-sm text-white">
                 <p>falecom@tsacomunica.com.br</p>
-                <p>19 3645.5986</p>
                 <p>19 98216.2892</p>
               </div>
             </div>

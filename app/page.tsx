@@ -14,7 +14,7 @@ import { Metadata } from "next"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black bg-gradienteImgHome bg-repeat bg-cover text-white">
+    <main className="min-h-screen bg-black bg-gradienteImgHome bg-no-repeat bg-cover text-white">
       {/* Hero Section */}
       <section className=" mx-auto pt-40 pb-16 px-5 md:px-0">
         <div className="">
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="flex flex-col text-center justify-center items-center md:items-start md:pr-20">
             <h2 className="text-4xl font-regular md:text-left mb-10 text-center">Sobre nós</h2>
             <p className="text-gray-300 mb-10 md:text-left">
-            Na TSA Business Hub, nossa jornada começou em 2017 com uma missão clara:<strong>ajudar empresas a se destacarem por meio de estratégias integradas de branding e marketing</strong>. Desde então, temos nos dedicado a entender as necessidades específicas de cada cliente e a entregar soluções personalizadas que geram resultados reais.
+            Na TSA Business Hub, nossa jornada começou em 2015 com uma missão clara:<strong>ajudar empresas a se destacarem por meio de estratégias integradas de branding e marketing</strong>. Desde então, temos nos dedicado a entender as necessidades específicas de cada cliente e a entregar soluções personalizadas que geram resultados reais.
             </p>
             <PrimaryButton className="px-6 py-3 text-sm max-w-52">
               <Link href="/sobre">
@@ -164,122 +164,8 @@ export default function Home() {
       {/* International Section */}
       <section className="max-w-[1180px] mx-auto px-4 py-5 md:py-16">
         <div className="bg-radial from-[#000000] from-40% to-[#6e00db] rounded-3xl p-8 relative overflow-hidden">
-          <div className="flex flex-col md:flex-row">
-            <div className="w-full md:w-1/4 space-y-4 mb-8 md:mb-0 flex flex-col justify-between">
-              {/* Country Cards */}
-              <div className="bg-linearToBr from-[#6e00db] to-[#000000] backdrop-blur-sm rounded-3xl p-0 flex flex-col">
-                <div className="flex flex-row justify-center items-center mb-1 rounded-t-3xl p-2 bg-[#10021B]">
-                  <Image
-                    src={"/image/home/bandeira-brasil.png"}
-                    alt="Bandeira do Brasil"
-                    width={45}
-                    height={25}
-                    className="mr-4"
-                  />
-                  <h3 className="text-xl font-light">Brasil</h3>
-                </div>
-                
-                <div className="p-3 rounded-b-3xl flex flex-wrap justify-between">
-                 <Image
-                    src={"/image/home/logos/oster-logo.png"}
-                    alt="Logo Oster"
-                    width={40}
-                    height={25}
-                    className="mb-2"
-                  />
-                  <Image
-                    src={"/image/home/logos/tecnofeal-logo.png"}
-                    alt="Logo Tecnofeal"
-                    width={75}
-                    height={25}
-                    className="mb-2"
-                  />
-                  <Image
-                    src={"/image/home/logos/black-decker-logo.png"}
-                    alt="Logo Black+Decker"
-                    width={40}
-                    height={25}
-                    className="mb-2"
-                  />
-                  <Image
-                    src={"/image/home/logos/adere-logo.png"}
-                    alt="Logo Adere"
-                    width={50}
-                    height={25}
-                    className="mb-2"
-                  />
-                  <Image
-                    src={"/image/home/logos/huehoco-logo.png"}
-                    alt="Logo Huehoco ACP do Brasil"
-                    width={130}
-                    height={25}
-                    className=""
-                  />
-                  <Image
-                    src={"/image/home/logos/sib-logo.png"}
-                    alt="Logo SI do Brasil"
-                    width={80}
-                    height={25}
-                    className=""
-                  />
-                </div>
-              </div>
-
-              <div className="bg-linearToBr from-[#6e00db] to-[#000000] backdrop-blur-sm rounded-3xl p-0 flex flex-col">
-                <div className="flex flex-row justify-center items-center mb-1 rounded-t-3xl p-2 bg-[#10021B]">
-                  <Image
-                    src={"/image/home/bandeira-uruguai.png"}
-                    alt="Bandeira do Uruguai"
-                    width={45}
-                    height={25}
-                    className="mr-4"
-                  />
-                  <h3 className="text-xl font-light">Uruguai</h3>
-                </div>
-                
-                <div className="p-2 rounded-b-3xl flex flex-wrap justify-center">
-                 <Image
-                    src={"/image/home/logos/tiotom-logo.png"}
-                    alt="Logo Tio Tom"
-                    width={110}
-                    height={25}
-                    className="mb-2"
-                  />
-                  <Image
-                    src={"/image/home/logos/lafiesta-logo.png"}
-                    alt="Logo La Fiesta Punta"
-                    width={110}
-                    height={25}
-                    className="mb-2"
-                  />
-                </div>
-              </div>
-
-              <div className="bg-linearToBr from-[#6e00db] to-[#000000] backdrop-blur-sm rounded-3xl p-0 flex flex-col min-h-36">
-                <div className="flex flex-row justify-center items-center mb-1 rounded-t-3xl p-2 bg-[#10021B]">
-                  <Image
-                    src={"/image/home/bandeira-alemanha.png"}
-                    alt="Bandeira da Alemanha"
-                    width={45}
-                    height={25}
-                    className="mr-4"
-                  />
-                  <h3 className="text-xl font-light">Alemanha</h3>
-                </div>
-                
-                <div className="p-3 rounded-b-3xl flex flex-wrap justify-center items-center h-full">
-                 <Image
-                    src={"/image/home/logos/huehoco-ale-logo.png"}
-                    alt="Logo Huehoco Group"
-                    width={150}
-                    height={25}
-                    className="mb-2"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full md:w-3/4 pl-0 md:pl-8">
+          <div className="flex flex-col md:flex-row justify-center">
+            <div className="w-3/4 pl-0 md:pl-8">
               <div className="rounded-lg overflow-hidden h-full">
                 <Image
                   src="/image/home/mapa-tsa2.png"

@@ -197,7 +197,7 @@ export default function JoinUsClientPage() {
       {/* Hero Section */}
       <section className="max-w-[1180px] mx-auto px-4 pt-32 pb-16">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-regular leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-regular leading-tight">
             Faça parte do
             <br/>nosso<span className="text-[#fc4c01]"> time</span>
           </h1>

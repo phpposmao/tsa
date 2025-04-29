@@ -93,7 +93,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
               <div
                 key={solution.id}
                 className={cn(
-                  "flex-1 p-8 text-center items-center cursor-pointer transition-colors relative z-10",
+                  "flex-1 p-5 md:p-8 text-center items-center cursor-pointer transition-colors relative z-10",
                   index !== 2 && "mb-2", // Add margin between buttons except the last one
                   selectedSolution === solution.id
                     ? "bg-[#FC4C01] text-white"
@@ -131,7 +131,7 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
               <div
                 key={solution.id}
                 className={cn(
-                  "flex-1 p-8 text-center items-center cursor-pointer transition-colors relative z-10",
+                  "flex-1 p-5 md:p-8 text-center items-center cursor-pointer transition-colors relative z-10",
                   index !== 2 && "mb-2", // Add margin between buttons except the last one
                   selectedSolution === solution.id
                     ? "bg-[#FC4C01] text-white"

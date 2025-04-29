@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { useMediaQuery } from "@/hooks/use-media-query"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
-import { FaWhatsapp } from "react-icons/fa"
+import { FaWhatsapp, FaTiktok } from "react-icons/fa"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -59,6 +59,9 @@ export default function Navbar() {
                 </Link>
                 <Link target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/tsa-comunica" aria-label="LinkedIn">
                   <Linkedin className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
+                </Link>
+                <Link target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@aculpaedatsa" aria-label="Tiktok">
+                  <FaTiktok className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />
                 </Link>
                 <Link target="_blank" rel="noopener noreferrer" href="https://wa.me/5519982162892" aria-label="Whatsapp">
                   <FaWhatsapp className="h-4 w-4 text-gray-400 hover:text-white transition-colors" />

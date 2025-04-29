@@ -1,5 +1,4 @@
 import type React from "react"
-import { Inter } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -8,6 +7,7 @@ import Footer from "@/components/footer"
 import VideoPopup from "@/components/video-popup"
 import "./globals.css"
 import { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/react"
 
 const glancyr = localFont({
   src: [
@@ -62,6 +62,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
