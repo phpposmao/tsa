@@ -49,7 +49,7 @@ export default function Home() {
       </section>
 
       {/* Solutions Section */}
-      <section className="max-w-[1180px] mx-auto px-4 py-16">
+      <section className="max-w-[1180px] mx-auto px-4 py-4">
         <SolutionsSection />
       </section>
 

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Gabriel Viana",
-    role: "Produtor de Conteúdo",
-    image: "/image/sobre/GA1.png",
-    imageHover: "/image/sobre/GA2.png",
+    name: "Victoria Fatinatti",
+    role: "Comercial",
+    image: "/image/sobre/VIC1.png",
+    imageHover: "/image/sobre/VIC2.png",
   },
   {
     name: "Fernando Lima",

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 import localFont from "next/font/local"
+import { useMediaQuery } from "@/hooks/use-media-query"
 
 const estrella = localFont({
   src: [
@@ -26,6 +27,8 @@ interface SolutionsSectionProps {
 }
 
 export default function SolutionsSection({ title = "Soluções Integradas" }: SolutionsSectionProps) {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  
   const solutions: Solution[] = [
     {
       id: "force",
@@ -79,6 +82,61 @@ export default function SolutionsSection({ title = "Soluções Integradas" }: So
 
   const [selectedSolution, setSelectedSolution] = useState<string>(solutions[0].id)
   const currentSolution = solutions.find((s) => s.id === selectedSolution) || solutions[0]
+
+  if(isMobile) {
+    return (  
+      <div className="bg-black rounded-xl p-6 relative">
+        <h2 className="text-2xl font-bold mb-6 text-center">{title}</h2>
+
+        {/* Mobile Tabs - Horizontal Scrollable */}
+        <div className="mb-6">
+          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+            {solutions.map((solution) => (
+              <button
+                key={solution.id}
+                className={cn(
+                  "flex-shrink-0 px-3 py-2 rounded-lg text-xs font-medium transition-colors whitespace-nowrap",
+                  selectedSolution === solution.id
+                    ? "bg-[#FC4C01] text-white"
+                    : "bg-neutral-900 text-gray-300 hover:bg-neutral-800",
+                )}
+                onClick={() => setSelectedSolution(solution.id)}
+              >
+                {solution.title}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile Content */}
+        <div className="w-full md:w-1/2 bg-[#1e1e1e] relative flex items-center justify-center -mx-0.5 -my-0.5 p-0">
+
+            {/* Current solution image as background */}
+            <div className="absolute inset-0 w-0 h-0 md:w-auto md:h-auto">
+              <Image
+                src={currentSolution.image || "/placeholder.svg"}
+                alt={currentSolution.title}
+                fill
+                className=" object-cover"
+              />
+            </div>
+
+            {/* Content overlay */}
+            <div className="relative inset-0 flex flex-col items-center justify-end p-0 h-full w-full">
+              <span key={currentSolution.id} className={`${estrella.className} text-[#fc4c01] text-[6rem] md:text-[10rem] md:-m-12`}>{currentSolution.id}</span>
+            </div>
+          </div>
+
+        {/* Bottom Description */}
+        <div className="text-center mt-6 text-sm text-gray-300">
+          <p>
+            Combinamos estratégias e soluções que impulsionam os seus negócios. Garantimos resultados concretos e
+            duradouros para sua marca ou carreira.
+          </p>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="bg-[#1e1e1e] rounded-xl p-5 md:p-20 relative">
