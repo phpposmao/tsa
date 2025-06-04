@@ -9,40 +9,10 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: "Victoria Fatinatti",
-    role: "Comercial",
-    image: "/image/sobre/VIC1.png",
-    imageHover: "/image/sobre/VIC2.png",
-  },
-  {
-    name: "Fernando Lima",
-    role: "Diretor",
-    image: "/image/sobre/FER1.png",
-    imageHover: "/image/sobre/FER2.png",
-  },
-  {
-    name: "Erick Renato",
-    role: "Gestor de Tráfego",
-    image: "/image/sobre/ERICK1.png",
-    imageHover: "/image/sobre/ERICK2.png",
-  },
-  {
-    name: "Pedro Posmão",
-    role: "Desenvolvedor",
-    image: "/image/sobre/PEDRO1.png",
-    imageHover: "/image/sobre/PEDRO2.png",
-  },
-  {
-    name: "Gustavo Araújo",
-    role: "Atendimento",
-    image: "/image/sobre/GU1.png",
-    imageHover: "/image/sobre/GU2.png",
-  },
-  {
-    name: "Erico Tereran",
-    role: "Diretor de Arte",
-    image: "/image/sobre/ERICO1.png",
-    imageHover: "/image/sobre/ERICO2.png",
+    name: "Alex Torres",
+    role: "CEO & Diretor",
+    image: "/image/sobre/ALEX1.png",
+    imageHover: "/image/sobre/ALEX2.png",
   },
   {
     name: "Bia Lavandoscki",
@@ -51,16 +21,46 @@ const team = [
     imageHover: "/image/sobre/BIA2.png",
   },
   {
+    name: "Erick Renato",
+    role: "Gestor de Tráfego",
+    image: "/image/sobre/ERICK1.png",
+    imageHover: "/image/sobre/ERICK2.png",
+  },
+  {
+    name: "Erico Tereran",
+    role: "Diretor de Arte",
+    image: "/image/sobre/ERICO1.png",
+    imageHover: "/image/sobre/ERICO2.png",
+  },
+  {
+    name: "Fernando Lima",
+    role: "Diretor",
+    image: "/image/sobre/FER1.png",
+    imageHover: "/image/sobre/FER2.png",
+  },
+  {
+    name: "Gustavo Araújo",
+    role: "Atendimento",
+    image: "/image/sobre/GU1.png",
+    imageHover: "/image/sobre/GU2.png",
+  },
+  {
+    name: "Pedro Posmão",
+    role: "Desenvolvedor",
+    image: "/image/sobre/PEDRO1.png",
+    imageHover: "/image/sobre/PEDRO2.png",
+  },
+  {
     name: "Vanessa Ferreira",
     role: "Designer",
     image: "/image/sobre/VAN1.png",
     imageHover: "/image/sobre/VAN2.png",
   },
   {
-    name: "Alex Torres",
-    role: "CEO & Diretor",
-    image: "/image/sobre/ALEX1.png",
-    imageHover: "/image/sobre/ALEX2.png",
+    name: "Victoria Fatinatti",
+    role: "Comercial",
+    image: "/image/sobre/VIC1.png",
+    imageHover: "/image/sobre/VIC2.png",
   },
   {
     name: "",
