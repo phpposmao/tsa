@@ -190,3 +190,53 @@ export async function sendFormResults(formData: Record<string, any>, formType: s
     return { success: false, message: "Erro ao enviar resultados. Por favor, tente novamente." }
   }
 }
+
+// New action for Google Business form
+export async function sendGoogleBusinessForm(formData: Record<string, any>) {
+  try {
+    await transporter.sendMail({
+      from: '"TSA Lead Google Meu Negócio" <tsa@tsaacademy.com.br>',
+      to: "tsa@tsaacademy.com.br",
+      subject: `Novo cadastro Google Meu Negócio: ${formData.businessName}`,
+      html: `
+        <h1>Novo Cadastro Google Meu Negócio</h1>
+        <h2>${formData.businessName}</h2>
+        <p><strong>Data de cadastro:</strong> ${formData.registrationDate}</p>
+        
+        <h3>Informações do Estabelecimento</h3>
+        <p><strong>Nome do proprietário:</strong> ${formData.ownerName}</p>
+        <p><strong>Telefone:</strong> ${formData.phone}</p>
+        <p><strong>WhatsApp:</strong> ${formData.whatsapp}</p>
+        <p><strong>Endereço:</strong> ${formData.address}</p>
+        <p><strong>Email:</strong> ${formData.ownerEmail}</p>
+        
+        <h3>Horários de Funcionamento</h3>
+        <p><strong>Segunda a Sexta:</strong> ${formData.weekdayHours}</p>
+        <p><strong>Sábado:</strong> ${formData.saturdayHours}</p>
+        <p><strong>Domingo:</strong> ${formData.sundayHours}</p>
+        
+        <h3>Detalhes Adicionais</h3>
+        <p><strong>Área de cobertura:</strong> ${formData.coverageArea}</p>
+        <p><strong>Formas de pagamento:</strong> ${formData.paymentMethods}</p>
+        <p><strong>Data de abertura:</strong> ${formData.openingDate}</p>
+        <p><strong>Website:</strong> ${formData.website || "Não informado"}</p>
+        <p><strong>Redes sociais:</strong> ${formData.socialMedia || "Não informado"}</p>
+        <p><strong>Palavras-chave:</strong> ${formData.keywords}</p>
+        <p><strong>Ponto no mapa:</strong> ${formData.hasMapPoint === "S" ? "Sim" : "Não"}</p>
+        <p><strong>Faz entregas:</strong> ${formData.doesDelivery === "S" ? "Sim" : "Não"}</p>
+        <p><strong>Possui logo:</strong> ${formData.hasLogo === "S" ? "Sim" : "Não"}</p>
+        
+        <h3>Produtos e Serviços</h3>
+        <p>${formData.bestProducts}</p>
+        
+        <h3>Descrição</h3>
+        <p>${formData.description}</p>
+      `,
+    });
+
+    return { success: true, message: "Cadastro enviado com sucesso!" }
+  } catch (error) {
+    console.error("Error sending Google Business form:", error)
+    return { success: false, message: "Erro ao enviar o cadastro. Por favor, tente novamente." }
+  }
+}
